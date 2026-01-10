@@ -1,0 +1,109 @@
+<div class="section3-block" {% if include.id %}id="{{ include.id }}"{% endif %}>
+  <div class="section3-buttons">
+    {% assign buttons = include.buttons | split: '||' %}
+    {% for button in buttons %}
+      {% assign button_parts = button | split: '|' %}
+      <button class="button button-primary section3-button {% if forloop.first %}active{% endif %}" 
+            data-index="{{ forloop.index0 }}">
+            {{ button_parts[0] }}
+      </button>
+    {% endfor %}
+  </div>
+  
+  <div class="section3-image-container">
+    {% assign images = include.images | split: '||' %}
+
+    {% assign texts1_icon = include.texts1_icon | split: '||' %}
+    {% assign texts1_title = include.texts1_title | split: '||' %}
+    {% assign texts1_description = include.texts1_description | split: '||' %}
+    {% assign texts1_x = include.texts1_x | split: '||' %}
+    {% assign texts1_y = include.texts1_y | split: '||' %}
+
+    {% assign texts2_icon = include.texts2_icon | split: '||' %}
+    {% assign texts2_title = include.texts2_title | split: '||' %}
+    {% assign texts2_description = include.texts2_description | split: '||' %}
+    {% assign texts2_x = include.texts2_x | split: '||' %}
+    {% assign texts2_y = include.texts2_y | split: '||' %}
+
+    {% assign texts3_icon = include.texts3_icon | split: '||' %}
+    {% assign texts3_title = include.texts3_title | split: '||' %}
+    {% assign texts3_description = include.texts3_description | split: '||' %}
+    {% assign texts3_x = include.texts3_x | split: '||' %}
+    {% assign texts3_y = include.texts3_y | split: '||' %}
+    
+    {% for image in images %}
+      <div class="section3-slide {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}">
+        <img src="{{ image }}" alt="Image {{ forloop.index }}" class="section3-image">
+        
+        <div class="section3-overlay">
+          {% if texts1_title[forloop.index0] %}
+          <div class="section3-text" 
+               style="left: {{ texts1_x[forloop.index0] | default: '10%' }}; top: {{ texts1_y[forloop.index0] | default: '10%' }};">
+            <span class="section3-text-content">
+                <i class="{{ texts1_icon[forloop.index0] }} icon"></i>
+                <div class="section3-text-content-text">
+                    <h3>{{ texts1_title[forloop.index0] }}</h3>
+                    <h6>{{ texts1_description[forloop.index0] }}</h6>
+                </div>
+            </span>
+          </div>
+          {% endif %}
+          
+          {% if texts2_title[forloop.index0] %}
+          <div class="section3-text" 
+               style="left: {{ texts2_x[forloop.index0] | default: '50%' }}; top: {{ texts2_y[forloop.index0] | default: '50%' }};">
+            <span class="section3-text-content">
+                <i class="{{ texts2_icon[forloop.index0] }} icon"></i>
+                <div class="section3-text-content-text">
+                    <h3>{{ texts2_title[forloop.index0] }}</h3>
+                    <h6>{{ texts2_description[forloop.index0] }}</h6>
+                </div>
+            </span>
+          </div>
+          {% endif %}
+          
+          {% if texts3_title[forloop.index0] %}
+          <div class="section3-text" 
+               style="left: {{ texts3_x[forloop.index0] | default: '80%' }}; top: {{ texts3_y[forloop.index0] | default: '80%' }};">
+            <span class="section3-text-content">
+                <i class="{{ texts3_icon[forloop.index0] }} icon"></i>
+                <div class="section3-text-content-text">
+                    <h3>{{ texts3_title[forloop.index0] }}</h3>
+                    <h6>{{ texts3_description[forloop.index0] }}</h6>
+                </div>
+            </span>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const section3Blocks = document.querySelectorAll('.section3-block');
+  
+  section3Blocks.forEach(block => {
+    const buttons = block.querySelectorAll('.section3-button');
+    const slides = block.querySelectorAll('.section3-slide');
+    
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        
+        // Remove active class from all buttons and slides in this block
+        buttons.forEach(btn => btn.classList.remove('active'));
+        slides.forEach(slide => slide.classList.remove('active'));
+        
+        // Add active class to clicked button and corresponding slide
+        this.classList.add('active');
+        const targetSlide = block.querySelector(`.section3-slide[data-index="${index}"]`);
+        if (targetSlide) {
+          targetSlide.classList.add('active');
+        }
+      });
+    });
+  });
+});
+</script>

@@ -1,0 +1,17 @@
+<div class="video-section">
+    <video class="video-element" 
+        {% if include.id %}id="{{ include.id }}"{% endif %}
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        {% if include.controls %}controls{% endif %}
+        {% if include.poster %}poster="{{ include.poster }}"{% endif %}>
+        <source src="{{ include.src }}" type="{{ include.type | default: 'video/mp4' }}">
+        {% if include.fallback %}
+        <p>{{ include.fallback }}</p>
+        {% else %}
+        <p>Your browser does not support the video tag.</p>
+        {% endif %}
+    </video>
+</div>

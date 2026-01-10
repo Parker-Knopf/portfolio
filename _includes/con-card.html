@@ -1,0 +1,27 @@
+<div class="container">
+    {% include card.html 
+        pre-title=include.title
+        title=include.name 
+        dates=include.location 
+        logo=include.logo
+    %}
+    <div class="section1-block">
+        <div class="container">
+            {% include heading3-section.html title="Objective" subtitle="Statement" %}
+            <p>{{include.report}}</p>
+        </div>
+        <div class="container">
+            {% include heading3-section.html title="Contact" subtitle="Information" %}
+            <div class="contact-container">
+                <div class="contact-item">
+                    <a href="mailto:parker.knopf@gmail.com" aria-label="Email">parker.knopf@gmail.com</a>
+                    <i class="fa-solid fa-envelope icon"></i>
+                </div>
+                <div class="contact-item">
+                    <a href="tel:+19513171218" aria-label="Phone">(951) 317-1218</a>
+                    <i class="fa-solid fa-square-phone icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

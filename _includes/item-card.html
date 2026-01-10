@@ -1,0 +1,23 @@
+<div class="item-card">
+    <div class="item-card-visible">
+        {% if include.image %}
+        <div class="item-card-image">
+            <img src="{{ include.image }}" alt="{{ include.alt | default: include.title }}">
+        </div>
+        {% endif %}
+        {% include heading3-section.html title=include.title subtitle=include.subtitle %}
+    </div>
+    <div class="item-card-hidden">
+        {% if include.description %}
+        <p>{{ include.description }}</p>
+        {% endif %}
+        <div class="item-card-buttons">
+            {% if include.button1_text %}
+            <a href="{{ include.button1_link }}" class="button button-primary">{{ include.button1_text }}</a>
+            {% endif %}
+            {% if include.button2_text %}
+            <a href="{{ include.button2_link }}" class="button button-secondary">{{ include.button2_text }}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

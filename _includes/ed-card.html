@@ -1,0 +1,18 @@
+<div class="container">
+    {% include card.html 
+        pre-title=include.major
+        title=include.school 
+        dates=include.dates 
+        logo=include.logo
+    %}
+    <div class="section1-block">
+        <div class="container">
+            {% include heading3-section.html title="Courses" subtitle="Taken" %}
+            <p>{{include.courses}}</p>
+        </div>
+        <div class="container">
+            {% include heading3-section.html title="GPA" subtitle=include.honor %}
+            <h2>{{include.gpa}}</h2>
+        </div>
+    </div>
+</div>

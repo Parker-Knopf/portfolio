@@ -1,0 +1,220 @@
+---
+layout: page
+title: Home
+---
+
+{%
+    include image-element.html
+    full_width=true
+    image="assets/images/ParkerHomeScreen.jpg"
+    alt="Self Image"
+    title="First Last"
+    subtitle="Subtitle Heading"
+    text="Extra text can go here if needed for the image element."
+%}
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+{%
+    include video-element.html
+    id="sample-video"
+    src="assets/videos/firstWalk.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        id="sample-video"
+        src="assets/videos/firstWalk.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% include heading3-section.html title="Section 2 Block with Video" subtitle="Subtitle Example" %}
+        <p>This is a section block containing a video element alongside text content. The video showcases a sample video embedded using a Jekyll include.</p>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="assets/images/ParkerHomeScreen.jpg"
+        alt="Self Image"
+    %}
+    <div class="section1-block">
+        {% include heading3-section.html title="Section 2 Block with Image" subtitle="Subtitle Example" %}
+        <p>This is a section block containing a video element alongside text content. The video showcases a sample video embedded using a Jekyll include.</p>
+    </div>
+</div>
+
+<div class="video-section">
+    {%
+        include video-element.html
+        id="sample-videoed"
+        src="assets/videos/finalPresentationOceanWell.mp4"
+        type="video/mp4"
+    %}
+</div>
+
+{%  include section3-block.html 
+    buttons="Button 1||Button 2||Button 3"
+    images="assets/images/projects/podex/podexCircuitry.png||assets/images/projects/podex/podexDesign.png||assets/images/projects/podex/podexSoftware.png"
+    texts1_icon="fa-solid fa-star||fa-solid fa-gear||fa-solid fa-code"
+    texts1_title="Text Title 1_1||Text Title 1_2||Text Title 1_3"
+    texts1_description="Description for Text Title 1_1||Description for Text Title 1_2||Description for Text Title 1_3"
+    texts1_x="15%||20%||25%"
+    texts1_y="20%||15%||30%"
+    texts2_icon="fa-solid fa-star||fa-solid fa-gear||fa-solid fa-code"
+    texts2_title="Text Title 2_1||Text Title 2_2||Text Title 2_3"
+    texts2_description="Description for Text Title 2_1||Description for Text Title 2_2||Description for Text Title 2_3"
+    texts2_x="50%||55%||45%"
+    texts2_y="50%||60%||40%"
+    texts3_icon="fa-solid fa-star||fa-solid fa-gear||fa-solid fa-code"
+    texts3_title="Text Title 3_1||Text Title 3_2||Text Title 3_3"
+    texts3_description="Description for Text Title 3_1||Description for Text Title 3_2||Description for Text Title 3_3"
+    texts3_x="85%||80%||90%"
+    texts3_y="80%||85%||75%"
+%}
+
+<div class="card-item-list">
+    {%
+        include item-card.html
+        title="Item Card Title"
+        subtitle="Item Card Subtitle"
+        image="https://placehold.co/300x200"
+        alt="Placeholder Image"
+        description="This is a description for the item card. It provides more details about the item. About three to four lines of text should be sufficient to fill this card completely to get to 3 to 4 lines to fill it out to make it look good."
+        button1_text="Learn More"
+        button1_link="#"
+        button2_text="Media"
+        button2_link="#"
+    %}
+    {%
+        include item-card.html
+        title="Item Card Title"
+        subtitle="Item Card Subtitle"
+        image="https://placehold.co/300x200"
+        alt="Placeholder Image"
+        description="This is a description for the item card. It provides more details about the item."
+        button1_text="Learn More"
+        button1_link="#"
+        button2_text="Media"
+        button2_link="#"
+    %}
+</div>
+
+<div class="card-section">
+    {% include con-card.html 
+        title="Mechatronics Engineer"
+        name="Parker Knopf"
+        location="San Diego, CA" 
+        logo="https://placehold.co/240x180"
+        report="Applying my expertise, tenacity, and passion to any field of engineering in a professional, effective, and organized manner in an effort to make the world a better place." 
+    %}
+</div>
+
+<div class="section1-block">
+    <p>This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way.</p>
+    <p>This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way. This is a section block. It is used to group related content together in a visually distinct way.</p>
+</div>
+
+<div class="section2-block">
+    {% include heading3-section.html title="Section 2 Block" subtitle="Example" %}
+    <div class="card-item-list">
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-gear"
+        %}
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-rocket"
+        %}
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-lightbulb"
+        %}
+                {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-gear"
+        %}
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-rocket"
+        %}
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-lightbulb"
+        %}
+    </div>
+</div>
+
+<div class="card-section">
+    {% include ed-card.html 
+        major="Major" 
+        school="UC San Diego" 
+        dates="Month Year - Month Year"
+        logo="https://placehold.co/240x180"
+        courses=" Parametric Identification, Linear Systems Theory, Nonlinear Systems, Nonlinear Control, Robotics, Haptics and Controls, Bioinspired Mobile Robotics, Robot Motion Planning, Soft Robotics" 
+        honor="Cum Laude"
+        gpa="X.XX"
+    %}
+    {% include ed-card.html 
+        major="Major" 
+        school="UC San Diego" 
+        dates="Month Year - Month Year"
+        logo="https://placehold.co/240x180"
+        courses=" Parametric Identification, Linear Systems Theory, Nonlinear Systems, Nonlinear Control, Robotics, Haptics and Controls, Bioinspired Mobile Robotics, Robot Motion Planning, Soft Robotics" 
+        honor="Cum Laude"
+        gpa="X.XX"
+    %}
+</div>
+
+{% include heading2-section.html h2="Heading 2 Section" h3="Sub-Heading 2 Section" icon="fa-solid fa-hexagon-nodes" %}
+
+<div class="card-section">
+    {% include exp-card.html 
+        company="Company Name 1" 
+        title="Title/Position 1" 
+        dates="Month Year - Month Year"
+        logo="https://placehold.co/240x180"
+        report="This is aingd small text. This is some sample text for Card 1. It provides a brief description of the card content." 
+        reference_title="Manager"
+        reference_name="Manager"
+        reference_email="manager@email.com"
+        reference_location="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5"
+        reference_location_name="San Diego"
+    %}
+        {% include exp-card.html 
+        company="Company Name 2" 
+        title="Title/Position 2" 
+        dates="Month Year - Month Year"
+        logo="https://placehold.co/240x180"
+        report="This is aingd small text. This is some sample text for Card 1. It provides a brief description of the card content." 
+        reference_title="Manager"
+        reference_name="Manager"
+        reference_email="manager@email.com"
+        reference_location="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5"
+        reference_location_name="San Diego"
+    %}
+</div>
+
+<div class="section1-block">
+    <span>This is a span element used for inline text styling.</span>
+    <p>This is a paragraph. Within this paragraph we have the following in line styles. "<strong>Here</strong>" we have strong text. "<em>Here</em>" we have emphasized text. Span is used as quotes and should NOT be used inline.</p>
+    <small>This is a small element used for fine print or secondary text.</small>
+</div>
+
+<span>This is a span element used for inline text styling.</span>
+<p>This is a paragraph. Within this paragraph we have the following in line styles. "<strong>Here</strong>" we have strong text. "<em>Here</em>" we have emphasized text. Span is used as quotes and should NOT be used inline.</p>
+<small>This is a small element used for fine print or secondary text.</small>
