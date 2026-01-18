@@ -1,0 +1,13 @@
+# Site settings
+title: Portfolio
+description: My Portfolio Website
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - run.bat
+  - README.md

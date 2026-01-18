@@ -1,0 +1,81 @@
+---
+layout: page
+title: 404 - Page Not Found
+permalink: /404.html
+---
+
+<style>
+  .error-container {
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .error-code {
+    font-size: 120px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .error-message {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0;
+  }
+
+  .error-description {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 40px;
+    max-width: 500px;
+  }
+
+  .error-actions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .error-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .error-button:hover {
+    background-color: #0056b3;
+  }
+
+  .error-button.secondary {
+    background-color: #6c757d;
+  }
+
+  .error-button.secondary:hover {
+    background-color: #545b62;
+  }
+</style>
+
+<div class="error-container">
+  <h1 class="error-code">404</h1>
+  <h2 class="error-message">Page Not Found</h2>
+  <p class="error-description">
+    Sorry, the page you're looking for doesn't exist or has been moved.
+  </p>
+  <div class="error-actions">
+    <a href="/index.html" class="button primary">Go Home</a>
+    <a href="/projects.html" class="button secondary">View Projects</a>
+    <a href="/experience.html" class="button secondary">View Experience</a>
+  </div>
+</div>

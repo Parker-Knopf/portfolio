@@ -3,27 +3,24 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     padding: 0;
+
 }
 
 .card-section > .container {
+    display: flex;
+    box-sizing: border-box;
     max-width: var(--width-pg-sm);
     flex-direction: row;
     gap: var(--space-lg);
     margin: var(--space-md) 0;
+    /* padding: var(--space-md); */
 }
-/* 
-.cardlist-content .container {
-    max-width: var(--width-pg-sm);
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: var(--space-lg);
-    margin: var(--space-md) 0;
-} */
 
 .card-section::after {
     top: 0;
@@ -44,12 +41,13 @@
 
 .card-item-list {
     display: flex;
+    box-sizing: border-box;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: var(--space-md);
     padding: var(--space-lg);
-    flex: 1;
 }
 
 .card-item-list .card {
@@ -94,18 +92,13 @@
     flex: 1;
 }
 
-/* .card .container {
-    flex-direction: row;
-    align-items: space-between;
-    padding: 0;
-    margin: 0;
-} */
-
 /* Item Card Styles */
 .item-card {
     position: relative;
-    width: 600px;
+    width: 100%;
     height: 400px;
+    max-width: 600px;
+    min-width: 200px;
     background-color: var(--color-elevated);
     border: var(--width-sm) solid var(--color-primary);
     border-radius: var(--radius);
@@ -185,9 +178,50 @@
     margin-top: var(--space-sm);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1302px) {
     .card-section > .container {
         flex-direction: column;
         align-items: center;
+        max-width: var(--width-pg-curl);
+    }
+}
+
+@media (max-width: 500px) {
+    .item-card .heading3-section {
+        margin-left: 0;
+    }
+
+    .item-card-visible {
+        align-items: center;
+    }
+
+    .item-card-visible .heading3-section h1 {
+        font-size: clamp(1.7rem, 4cqi, 2.2rem);
+    }
+
+    .item-card-visible .heading3-section h3 {
+        font-size: clamp(.9rem, 2cqi, 1rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-section .card {
+        width: fit-content;
+        min-width: unset;
+    }
+
+    .section1-block > .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+    .section3-text-content-text {
+        display: none;
     }
 }

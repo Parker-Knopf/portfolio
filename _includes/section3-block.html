@@ -3,7 +3,7 @@
     {% assign buttons = include.buttons | split: '||' %}
     {% for button in buttons %}
       {% assign button_parts = button | split: '|' %}
-      <button class="button button-primary section3-button {% if forloop.first %}active{% endif %}" 
+      <button class="button primary section3-button {% if forloop.first %}active{% endif %}" 
             data-index="{{ forloop.index0 }}">
             {{ button_parts[0] }}
       </button>

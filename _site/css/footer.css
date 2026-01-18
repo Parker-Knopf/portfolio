@@ -5,6 +5,7 @@
   position: relative; /* anchor absolute nav directly under header */
   background-color: var(--color-surface);
   padding: 1rem;
+  z-index: -1;
 }
 
 .footer .icon {
@@ -15,4 +16,11 @@
   text-decoration: none;
   white-space: nowrap;
   color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
