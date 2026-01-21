@@ -6,7 +6,7 @@
   --color-primary: #38bdf8;
   --color-primary-hover: #0ea5e9;
   --color-text: #353535;
-  --color-text-secondary: #3d3d3d;
+  --color-text-secondary: #4b4b4b;
   --color-muted: #262626;
 
   /* Typography */
@@ -115,6 +115,14 @@ em {
   color: var(--color-text);        /* ensures consistent text color */
   font-size: var(--font-size-body);
   margin-bottom: var(--space-md);  /* spacing between paragraphs */
+}
+
+.dark-theme-text,
+.dark-theme-text h2,
+.dark-theme-text h4,
+.dark-theme-text h3 {
+  color: #e9e9e9 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Dark mode styles */

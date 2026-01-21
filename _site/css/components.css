@@ -180,6 +180,7 @@ main.container {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: var(--space-lg);
+    padding: 0;
 }
 
 .section2-block {
@@ -200,6 +201,10 @@ main.container {
   min-width: 0;
 }
 
+.section2-block > .video-section {
+  padding: 0;
+}
+
 /* Section3 Block */
 .section3-block {
   width: 100%;
@@ -211,6 +216,10 @@ main.container {
   gap: var(--space-lg);
   box-sizing: border-box;
   padding: var(--space-md);
+}
+
+.section3-block .icon {
+  font-size: clamp(1rem, 6vw, 3rem);
 }
 
 .section3-buttons {
@@ -279,7 +288,8 @@ main.container {
 
 /* Image Element */
 .image-container {
-  width: calc(100% - 2 * var(--space-md));
+  /* width: calc(100% - 2 * var(--space-md)); */
+  width: 100%;
   max-width: 100%;
   position: relative;
   border-radius: var(--radius);
@@ -288,7 +298,7 @@ main.container {
 }
 
 .image-container.fullwidth {
-  width: 100%;
+  width: 100vw;
   border-radius: 0;
 }
 
@@ -344,8 +354,9 @@ main.container {
 
 /* Video Element */
 .video-section {
-  width: calc(100% - 2 * var(--space-md));
+  width: 100%;
   max-width: calc(var(--width-pg) - 2 * var(--space-md));
+  padding: 0 var(--space-md);
   display: flex;
   box-sizing: border-box;
   flex-shrink: 1;
@@ -446,6 +457,14 @@ main.container {
     align-items: center;
     text-align: center;
     white-space: normal;
+  }
+
+  .heading1-section h1 {
+    font-size: clamp(1rem, 5.5vw, 2.2rem);
+  }
+
+  .heading1-section h3 {
+    font-size: clamp(0.5rem, 2vw, 1rem);
   }
 
   .image-container-overlay {

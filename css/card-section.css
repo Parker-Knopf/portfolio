@@ -34,6 +34,10 @@
     z-index: -1;
 }
 
+.card-section .section1-block {
+  padding: 0;
+}
+
 .card-section .card {
     width: 500px;
     min-width: 500px;
