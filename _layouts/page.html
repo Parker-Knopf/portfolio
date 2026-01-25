@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/card-section.css">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/components.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/header.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/footer.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/card-section.css' | relative_url }}">
   <script src="https://kit.fontawesome.com/a5645eeb0c.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" href="assets/images/headshot.png">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/headshot.png' | relative_url }}">
 </head>
 <body>
 
@@ -22,6 +22,6 @@
 
   {% include footer.html %}
 
-  <script src="js/main.js"></script>
+  <script src="{{ '/js/main.js' | relative_url }}"></script>
 </body>
 </html>

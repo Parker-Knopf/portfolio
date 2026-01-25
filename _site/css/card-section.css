@@ -1,7 +1,5 @@
 .card-section {
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -47,6 +45,7 @@
     display: flex;
     box-sizing: border-box;
     width: 100%;
+    max-width: var(--width-pg);
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;

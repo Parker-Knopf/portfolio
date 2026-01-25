@@ -7,29 +7,29 @@
     </button>
     <nav class="main-nav" id="mainNav">
       <ul class="nav-list">
-        <li><a href="index.html" class="nav-button {% if page.title == 'Portfolio - Home' %}active{% endif %}">Home</a></li>
+        <li><a href="{{ '/home.html' | relative_url }}" class="nav-button {% if page.title == 'Portfolio - Home' %}active{% endif %}">Home</a></li>
         <li class="nav-dropdown">
-          <a href="experience.html" class="nav-button {% if page.title == 'Experience' %}active{% endif %}">Experience</a>
+          <a href="{{ '/experience.html' | relative_url }}" class="nav-button {% if page.title == 'Portfolio - Experience' %}active{% endif %}">Experience</a>
           <ul class="dropdown-menu">
             <li><a href="#experience-1">Job 1</a></li>
             <li><a href="#experience-2">Job 2</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
-          <a href="organizations.html" class="nav-button {% if page.title == 'Organizations' %}active{% endif %}">Organizations</a>
+          <a href="{{ '/organizations.html' | relative_url }}" class="nav-button {% if page.title == 'Portfolio - Organizations' %}active{% endif %}">Organizations</a>
           <ul class="dropdown-menu">
             <li><a href="#org-1">Org 1</a></li>
             <li><a href="#org-2">Org 2</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
-          <a href="projects.html" class="nav-button {% if page.title == 'Projects' %}active{% endif %}">Projects</a>
+          <a href="{{ '/projects.html' | relative_url }}" class="nav-button {% if page.title == 'Portfolio - Projects' %}active{% endif %}">Projects</a>
           <ul class="dropdown-menu">
-            <li><a href="#project-1">Project 1</a></li>
-            <li><a href="#project-2">Project 2</a></li>
+            <li><a href="{{ '/projects/podex.html' | relative_url }}">Podex</a></li>
+            <li><a href="{{ '/projects/sector.html' | relative_url }}">Sector</a></li>
           </ul>
         </li>
-        <li><a href="teamProjects.html" class="nav-button {% if page.title == 'Team Projects' %}active{% endif %}">Team Projects</a></li>
+        <li><a href="{{ '/teamProjects.html' | relative_url }}" class="nav-button {% if page.title == 'Portfolio - Team Projects' %}active{% endif %}">Team Projects</a></li>
       </ul>
     </nav>
 </header>

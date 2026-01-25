@@ -1,0 +1,243 @@
+---
+layout: page
+title: Portfolio - Home
+---
+
+{%
+    include image-element.html
+    full_width=true
+    image="assets/images/ParkerHomeScreen.jpg"
+    alt="Self Image"
+    title="Parker Knopf"
+    subtitle="Innovative, Skilled, Driven"
+%}
+
+<div class="card-section">
+    {% include con-card.html 
+        title="Mechatronics Engineer"
+        name="Parker Knopf"
+        location="San Diego, CA" 
+        logo="assets/images/headshot.png"
+        report="Applying my expertise, tenacity, and passion to any field of engineering through professionalism, efficiency, and organization in an effort to make the world a better place." 
+    %}
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="About Me" 
+    h3="Innovative, Administrative, Tenacious" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section1-block">
+    <p>
+        My passion for the sciences, math, and engineering began from the very beginning. The mechanics and physical phenomenas of the universe and world around me were not enough to just observe. From the moment I could speak I was eager to learn more. My first "complete" sentence was "How work?". I was fascinated by the environment around me and determined to understand it. This desire only matured into a clear focus of continuing forward in pursuing the ever advancing technology and innovation the world was producing. My passion guided my journey to leadership in most of the clubs and orgs I involved myself in. My educational journey concluded with graduated with my masters in Mechanical Engineering with an emphasis in Controls and Mechatronics. I have since held internships at Hologic and Valitus Technologies as well as a summer research position under professor Morimoto for medical soft robotics. Right out of college I held a small position as a Hardware Engineer for Amazon Robotics. I transitioned however to my current career where I reside as a Mechanical Engineer II at Monarch Quantum in San Diego.
+    <p>
+    </p>
+        Although by both appearance and paper, I hold the characteristics of being a nerd, this is not my entire story. I am a two time MVP for my high school's water polo team. I continued to play competitive water polo at my men's club team leading it as the club's president. I believe my active lifestyle significantly influences my character, actions, and performance.
+    <p>
+    </p>
+        I can confidently say I am who I am today because of the household I was raised in. I mostly contribute my identity to my strong family connection and association with the Christian faith. Supportive parents have provided the initial spark that has with personal dedication rocketed me into who I am today.
+    </p>
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="Qualifications" 
+    h3="Unparalleled, Experienced, Determined" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="card-section">
+    <div class="container">
+        {% 
+            include heading3-section.html 
+            title="Education"
+            subtitle="Post Grad and Collegiate" 
+        %}
+        <div style="flex: 1;"></div>
+    </div>
+    {% include ed-card.html 
+        major="Mechanical Engineer, M.S." 
+        school="UC San Diego" 
+        dates="Sept. 2023 - June 2024"
+        logo="assets/icons/UCSD-Seal-Logo.png"
+        courses="Parametric Identification, Linear Systems Theory, Nonlinear Systems, Nonlinear Control, Robotics, Haptics and Controls, Bioinspired Mobile Robotics, Robot Motion Planning, Soft Robotics" 
+        honor="Cum Laude"
+        gpa="3.62"
+    %}
+    {% include ed-card.html 
+        major="Mechanical Engineer, B.S." 
+        school="UC San Diego"
+        dates="Sept. 2019 - June 2023"
+        logo="assets/icons/UCSD-Seal-Logo.png"
+        courses="Intro/Engineering Graphcs&Desn, MATLAB Program for Engr Analys, Thermodynamics, Solid Mechanics, Intro to Mathematical Physics, Autonomous Vehicles, Experimental Design, Elements of Materials Science, Kinematics, Dynamics, Thermo Fluid Dynamics, Signals and Systems, Controls, Computational Methods" 
+        honor=""
+        gpa="3.89"
+    %}
+    <div class="container">
+        {% 
+            include heading3-section.html 
+            title="Programs"
+            subtitle="Technical Skills" 
+        %}
+        <div style="flex: 1;"></div>
+    </div>
+    <div class="card-item-list">
+        {% include card-item.html 
+            title="SolidWorks" 
+            description="CAD Software" 
+            icon="fa-solid fa-compass-drafting"
+        %}
+        {% include card-item.html 
+            title="Autocad" 
+            description="CAD Software" 
+            icon="fa-solid fa-ruler"
+        %}
+        {% include card-item.html 
+            title="Mastercam" 
+            description="CAM Software" 
+            icon="fa-solid fa-bore-hole"
+        %}
+        {% include card-item.html 
+            title="Ansys" 
+            description="Simulation Software" 
+            icon="fa-solid fa-hexagon-nodes"
+        %}
+        {% include card-item.html 
+            title="Diptrace"
+            description="PCB Design Software" 
+            icon="fa-solid fa-bolt"
+        %}
+        {% include card-item.html 
+            title="Python/C++" 
+            description="Programming Language" 
+            icon="fa-solid fa-square-binary"
+        %}
+        {% include card-item.html 
+            title="Matlab" 
+            description="Programming Language" 
+            icon="fa-solid fa-square-binary"
+        %}
+        {% include card-item.html 
+            title="Photoshop" 
+            description="Visual Design Software" 
+            icon="fa-solid fa-paintbrush"
+        %}
+        {% include card-item.html 
+            title="Illustrator" 
+            description="Visual Design Software" 
+            icon="fa-solid fa-palette"
+        %}
+        {% include card-item.html 
+            title="PLM" 
+            description="Product Lifecycle Management" 
+            icon="fa-solid fa-book"
+        %}
+        {% include card-item.html 
+            title="ERP" 
+            description="Enterprise Resource Planning" 
+            icon="fa-solid fa-book"
+        %}
+        {% include card-item.html 
+            title="SolidWorks PDM" 
+            description="Product Data Management" 
+            icon="fa-solid fa-cloud-arrow-down"
+        %}
+        {% include card-item.html 
+            title="Github" 
+            description="Software Version Control" 
+            icon="fa-brands fa-github"
+        %}
+        {% include card-item.html 
+            title="Office Suite" 
+            description="Productivity Software" 
+            icon="fa-solid fa-file"
+        %}
+    </div>
+        <div class="container">
+        {% 
+            include heading3-section.html 
+            title="Licenses"
+            subtitle="Certifications" 
+        %}
+        <div style="flex: 1;"></div>
+    </div>
+        <div class="card-item-list">
+        {% include card-item.html 
+            title="Solidworks Mechanical Design Professional" 
+            description="CSWP Certification - June 2020" 
+            icon="fa-solid fa-bezier-curve"
+        %}
+        {% include card-item.html 
+            title="Photoshop Certified Associate" 
+            description="Adobe Certification - May 2019" 
+            icon="fa-solid fa-image"
+        %}
+        {% include card-item.html 
+            title="Jetson AI Specialist" 
+            description="Nvidia DLI Certification - March 2022" 
+            icon="fa-solid fa-microchip"
+        %}
+                {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-gear"
+        %}
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-rocket"
+        %}
+        {% include card-item.html 
+            title="Example Title" 
+            description="Example Desc" 
+            icon="fa-solid fa-lightbulb"
+        %}
+    </div>
+        <div class="container">
+        {% 
+            include heading3-section.html 
+            title="Awards"
+            subtitle="Honors and Recognitions" 
+        %}
+        <div style="flex: 1;"></div>
+    </div>
+        <div class="card-item-list">
+        {% include card-item.html 
+            title="SkillsUSA Automated Manufacturing Technology" 
+            description="National Gold Medalist" 
+            icon="fa-solid fa-screwdriver-wrench"
+        %}
+        {% include card-item.html 
+            title="SkillsUSA Additive Manufacturing" 
+            description="State Silver Medalist" 
+            icon="fa-solid fa-print"
+        %}
+        {% include card-item.html 
+            title="Board of Education Student Recognition" 
+            description="High Degree of Achievement" 
+            icon="fa-solid fa-lightbulb"
+        %}
+        {% include card-item.html 
+            title="UCSD MAE Robotic Competition" 
+            description="1st Place Team" 
+            icon="fa-solid fa-gear"
+        %}
+        {% include card-item.html 
+            title="UCSD MAE Modeling Competition" 
+            description="1st Place Team" 
+            icon="fa-solid fa-computer"
+        %}
+        {% include card-item.html 
+            title="Science Fair" 
+            description="District Gold Medalist" 
+            icon="fa-solid fa-lightbulb"
+        %}
+        {% include card-item.html 
+            title="Principal's Award"
+            description="Unique Individual Recognition" 
+            icon="fa-solid fa-lightbulb"
+        %}
+    </div>
+</div>

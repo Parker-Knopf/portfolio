@@ -1,6 +1,148 @@
 ---
 layout: page
-title: Experience
+title: Portfolio - Experience
 ---
-<h1>Experience</h1>
-<p>Experience page contents</p>
+
+{% 
+    include heading2-section.html 
+    h2="Experience" 
+    h3="Valuable, Exceptional, Professional" 
+    icon="fa-solid fa-user-tie"
+%}
+
+<div class="card-section">
+    <div class="container">
+        {% 
+            include heading3-section.html 
+            title="References"
+            subtitle="Letters of Rec" 
+        %}
+        <div style="flex: 1;"></div>
+    </div>
+    <div class="card-item-list">
+        {% include card-item.html 
+            title="Prof. Qi" 
+            description="MAE Professor" 
+            icon="fa-solid fa-scroll"
+        %}
+        {% include card-item.html 
+            title="Rob Ibbetson" 
+            description="High School Principal" 
+            icon="fa-solid fa-scroll"
+        %}
+        {% include card-item.html 
+            title="Mr. Hamilton" 
+            description="Manufacturing Teacher" 
+            icon="fa-solid fa-scroll"
+        %}
+        {% include card-item.html 
+            title="Mr. Williams" 
+            description="Physics Teacher" 
+            icon="fa-solid fa-scroll"
+        %}
+        {% include card-item.html 
+            title="Mr. Titterud" 
+            description="AP Calculus Teacher" 
+            icon="fa-solid fa-scroll"
+        %}
+        {% include card-item.html 
+            title="Mr. Gonzalez" 
+            description="Senior Class Supervisor" 
+            icon="fa-solid fa-scroll"
+        %}
+    </div>
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="Work Experience" 
+    h3="Responsible, Respectful, Consistent" 
+    icon="fa-solid fa-briefcase"
+%}
+
+<div class="card-section">
+    {%  include exp-card.html 
+        company="Monarch Quantum" 
+        title="Mechanical Engineer II" 
+        dates="Jan 2026 - Current"
+        logo="assets/icons/monarch_quantum_logo.jpeg"
+        report="A company specializing in scalable quantum computing solutions. Responsibilities include designing mechanical components for quantum photonic engines, collaborating with cross-functional teams to provide the mechanical basis ensuring the reliability and efficiency of quantum computing devices." 
+        reference_title="Manager"
+        reference_name="Marcus Lanovaz"
+        reference_email="marcus.lanovaz@monarchquantum.com"
+        reference_location="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5"
+        reference_location_name="San Diego, CA"
+    %}
+    {%  include exp-card.html 
+        company="Daylight Solutions" 
+        title="Mechanical Engineer I" 
+        dates="Jan 2025 - Jan 2026"
+        logo="assets/icons/drs.png"
+        report="DRS Daylight Solutions is an industry leader in quantum cascade laser-based technology and instrumentation. I proudly hold this position as my first post-grad career job working and delivering on several different laser modules. Responsibilities include mechanical design and Fabrication of laser packages and associated fabrication tooling" 
+        reference_title="Manager"
+        reference_name="Marcus Lanovaz"
+        reference_email="marcus.lanovaz@drs.com"
+        reference_location="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5"
+        reference_location_name="San Diego, CA"
+    %}
+    {%  include exp-card.html 
+        company="Amazon Robotics" 
+        title="Hardware Engineer" 
+        dates="Sept 2024 - Jan 2025"
+        logo="assets/icons/amazon.png"
+        report="With the department standing as the epicenter of robotics innovation, my team focused on developing a solid state internal product to drive down vendor costs and improve fulfillment efficiency and ergonomic use. Responsibilities include onsite engineer for ongoing and self-preformed hardware testing and managing a small team of technicians" 
+        reference_title="Manager"
+        reference_name="Pradeep Nanjappa"
+        reference_email="pradnanj@amazon.com"
+        reference_location="https://maps.app.goo.gl/rkHdfgybtpi2SZdg9"
+        reference_location_name="Ontario, CA"
+    %}
+    {%  include exp-card.html 
+        company="Hologic" 
+        title="Mechanical Engineer Intern" 
+        dates="June 2022 - Sept 2022"
+        logo="assets/icons/hologic.png"
+        report="Hologic is a medical manufacture supplying instruments for women's health. I interned in the Diagnostics Instrument Division Department. Primary projects included a Prototype Development of Next Generation Product and a Precision Instrument System Engineering Project" 
+        reference_title="Manager"
+        reference_name="Rolf Silbert"
+        reference_email="rolf.silbert@hologic.com"
+        reference_location="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5"
+        reference_location_name="San Diego, CA"
+    %}
+    {%  include exp-card.html 
+        company="Morimoto Lab - UCSD" 
+        title="Mechanical Engineer Researcher" 
+        dates="Dec 2022 - Sept 2023"
+        logo="assets/icons/Mlab_edited.png"
+        report="Research focuses on the design and control of flexible and soft robots for unstructured, unknown environments. They aim to develop safer, more dexterous robots and intuitive human-in-the-loop control interfaces that enable access, exploration, and manipulation. Primary responsibility was the design of a prototype Development of Next Generation Product" 
+        reference_title="Manager"
+        reference_name="Tania Morimoto"
+        reference_email="tamorimoto@ucsd.edu"
+        reference_location="https://maps.app.goo.gl/MSXHPrLex93wU8Cv9"
+        reference_location_name="San Diego, CA"
+    %}
+    {%  include exp-card.html 
+        company="UCSD MAE Jacobs School of Engineering" 
+        title="Mechanical Engineering Tutor" 
+        dates="April 2020 - June 2022"
+        logo="assets/icons/UCSD-Seal-Logo.png"
+        report="For this position I lead a student LAB section for the official course MAE 3. I have developed that significantly contributed to course content. Independently instructed and led a student lab section in the topics of CAD, design, implementation, and fabrication" 
+        reference_title="Manager"
+        reference_name="Huihui Qi"
+        reference_email="huqi@ucsd.edu"
+        reference_location="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5"
+        reference_location_name="San Diego, CA"
+    %}
+    {%  include exp-card.html 
+        company="Valitus Technologies" 
+        title="Mechanical Engineering Intern" 
+        dates="Jan 2019 - Sept 2020"
+        logo="assets/icons/Valitus Technologies.png"
+        report="Valitus Technologies, a military startup technologies company, contracted me to update and design products that would soon enter mass production. Critical AI Security Project for the USAF (United States Air Force) through AFWERX" 
+        reference_title="Manager"
+        reference_name="William Silguero"
+        reference_email="williams@valitustech.com"
+        reference_location="https://maps.app.goo.gl/3tAJS6ubVavHrVJXA"
+        reference_location_name="Corona, CA"
+    %}
+</div>
