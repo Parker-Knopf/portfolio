@@ -3,5 +3,150 @@ layout: page
 title: Portfolio - Podex
 ---
 
-<h1>Project 1 Details</h1>
-<p>Content here...</p>
+{% 
+    include heading2-section.html 
+    h2="Podex" 
+    h3="Hexapod Walking Robot" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include video-element.html
+    full_width=true
+    id="sample-video"
+    src="/assets/videos/projects/podex/04FirstWalk.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        Inspired by a randomly stumbled upon Youtube video of a rolling hexapod robot. With 19 PMW servos, and 3 micro controllers this project began to take life. Any and all aspects of robotic engineering was involved in the creation of this hexapod robot. The significance of this project was not the final product, but rather the educational journey I took to get there. Every step presented an issue I had to overcome and learn from. Being my first engineering endeavor ever, every technical skill was learned along the way. Extensive research, persistence and old fashion trial and error propelled me to success. My understanding and knowledge grew significantly in conjunction with my problem solving skills.
+    </p>
+</div>
+
+{%  include section3-block.html 
+    buttons="Design||Circuitry||Firmware||Software"
+    images="/assets/images/projects/podex/graphics/podexDesign.png||/assets/images/projects/podex/graphics/podexCircuitry.png||/assets/images/projects/podex/graphics/podexFirmware.png||/assets/images/projects/podex/graphics/podexSoftware.png"
+    texts1_icon="fa-solid fa-circle||fa-solid fa-bolt||fa-solid fa-display"
+    texts1_title="Conic Geometries||Capacitors||Graphics UI"
+    texts1_description="Complex Conic geometries to support a spherical shell||Reserved power was essential to consistently power servos||Digital UI Operational over robot wifi network"
+    texts1_x="35%||35%||40%"
+    texts1_y="9%||13%||14%"
+    texts2_icon="fa-solid fa-sitemap||fa-solid fa-clone||fa-solid fa-wave-square||fa-solid fa-globe"
+    texts2_title="Part Iterations||Modular Placement||16 Channel PWM||Gryroscopic Mode"
+    texts2_description="Generations of component design and prototyping||Accessible modular placement for Buck converters/Breakers||Stackable Adafruit Servo hat enabling servo control||Inverse kinematics to pitch/yaw/roll the robot"
+    texts2_x="70%||75%||75%||72%"
+    texts2_y="7%||13%||11%||12%"
+    texts3_icon="fa-solid fa-battery-half||fa-brands fa-usb||fa-solid fa-computer||fa-solid fa-person-walking"
+    texts3_title="Modular Batteries||Wire Management||Raspberry Pi Motherboard||Open-loop Walking Gait"
+    texts3_description="Conserving and utilizing space with modular placement||Accounted for in assembly design||Central control unit for all operations||Open-loop walking gait hard coded into soft"
+    texts3_x="63%||76%||62%||60%"
+    texts3_y="85%||85%||85%||80%"
+%}
+
+{% 
+    include heading2-section.html 
+    h2="Features" 
+    h3="Project Functionalities" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Walking Gait" 
+        subtitle="Main Functionality"
+    %}
+    <p>
+        The primary purpose of this hexapod robot is to walk. The robot can walk in 4 directions and can turn by rotating in place. Although the program I wrote for the robot to walk is not robust as I would have hoped for from my standards today, it did its job.
+    </p>
+</div>
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Dynamics" 
+        subtitle="Gyroscope"
+    %}
+    <p>
+        On-top of the robot being able to walk it can also perform dynamic movements by moving its legs to orientate its body. These dynamic movements include vertical offsets as well as a gyroscopic movement. Using an accelerometer in another project, the Arm Remote, by turning my hand it was intended to update the robot's position to micic the yaw and pitch of my hand movement. Although I was almost able to make this work the kinematic dynamics became too complicated with too little time convoluted by educational studies.
+    </p>
+</div>
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/podex/software/GUIInterface.png"
+        alt="GUI Interface"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="GUI Interface" 
+            subtitle="Remote Control"
+        %}
+        <p>
+            This self-built GUI was developed as an executable file to be used as the main controller of the robot. The application used serial communication over a localized wireless LAN network emulated by the Hexapod robot. This application was created through Python packages and APIs.
+        </p>
+    </div>
+</div>
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=false
+        id="sample-video"
+        src="/assets/videos/projects/podex/03StandTesting.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Testing" 
+            subtitle="Stand Base"
+        %}
+        <p>
+            The robot underwent hours of “tethered” tests as I repeatedly implemented updated, more efficient, and effective code. Holding the robot is its standing base which also functions as a charging stand. At the end of the video the robot transforms into sphere mode bringing its legs in to pre-set a spherical position.
+        </p>
+    </div>
+</div>
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=false
+        id="sample-video"
+        src="/assets/videos/projects/podex/05WalkFail.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Failure" 
+            subtitle="Constant But Slow Progression"
+        %}
+        <p>
+            This was the first time the robot had tried to walk and it was not the last time it failed either. Creating a hard coded loop of walking motion proved to be a challenging task with 6 legs. Another factor that proved problematic throughout this project as well turned out to be the power and strength of the servos.
+        </p>
+    </div>
+</div>
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=false
+        id="sample-video"
+        src="/assets/videos/projects/podex/02StandManufacture.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Manufacturing" 
+            subtitle="CNC Milling & 3D Printing"
+        %}
+        <p>
+            The entire robot was manufactured with additive manufacturing processes for rapid prototyping abilities. The stand for the robot however was fabricated with a CNC mill. Along with designing the base myself, I also wrote the G-code through the CAM program Mastercam, and operated the HAAS machine.
+        </p>
+    </div>
+</div>

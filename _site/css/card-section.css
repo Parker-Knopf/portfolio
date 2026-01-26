@@ -20,6 +20,14 @@
     /* padding: var(--space-md); */
 }
 
+.card-section p {
+    padding: 0;
+}
+
+.card-section .heading3 {
+    min-width: fit-content;
+}
+
 .card-section::after {
     top: 0;
     left: 0;
@@ -60,6 +68,10 @@
 
 .card-item-list .icon {
   font-size: 2rem;
+}
+
+.card-item-list p {
+    padding: 0;
 }
 
 .card {

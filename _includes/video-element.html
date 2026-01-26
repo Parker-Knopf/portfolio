@@ -1,5 +1,5 @@
 <div class="video-section">
-    <video class="video-element" 
+    <video class="video-element {% if include.full_width == true %}fullwidth{% endif %}" 
         {% if include.id %}id="{{ include.id }}"{% endif %}
         autoplay 
         muted 
