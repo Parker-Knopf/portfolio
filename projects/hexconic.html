@@ -1,0 +1,103 @@
+---
+layout: page
+title: Portfolio - Hexconic
+---
+
+{% 
+    include heading2-section.html 
+    h2="Hexconic" 
+    h3="Manufactured Assembly" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include video-element.html
+    full_width=true
+    id="sample-video"
+    src="/assets/videos/projects/hexconic/hexconicDemo.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        The purpose of this project was to mature my skills on a CNC machine and with CAM development. My high school had HAAS machines that I was determined to make use of. The product is a ring of 8 identical interlocking CNC fabricated components, sitting in a hexagon shape and unfolding into a circle.
+    </p>
+</div>
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Fixture Plate" 
+        subtitle="Machine Setup"
+    %}
+    <p>
+        The machine shop I was working in was only a year new and was still developing methods of manufacturing. To fabricate this project it was essential to have a fixture plate in the machine. Using the fixture plate a G54 working offset could be set in the bore on the top left and any stock material could be fixed to the plate with tapped holes. I had learned this type of fixture from a family friend who is in the manufacturing field, and brought it to the high school lab as a new method of manufacturing.
+    </p>
+</div>
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Fabrication" 
+        subtitle="6 Operations"
+    %}
+    <p>
+        The operations to fabricate this component were all independently thought of, developed, and programmed by myself. The operations included features such as facing, pockets, dynamic toolpaths, and contour tool paths. To completely fabricate this component, many operations were required. Between each operation new bolts were used and old ones removed to allow for the machine to mill the stock into the desired component. With the set G54 working offset the part could easily be set into position for the machine with the fixture plate having the drilled and tapped bores.
+    </p>
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="Fabrication" 
+    h3="CNC Milling" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op1.jpg"
+        alt="Fabrication Operation"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op2a.jpg"
+        alt="Fabrication Operation"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op2b.jpg"
+        alt="Fabrication Operation"
+    %}
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op3.jpg"
+        alt="Fabrication Operation"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op4.jpg"
+        alt="Fabrication Operation"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op5.jpg"
+        alt="Fabrication Operation"
+    %}
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/hexconic/fab/op6.jpg"
+        alt="Fabrication Operation"
+    %}
+</div>

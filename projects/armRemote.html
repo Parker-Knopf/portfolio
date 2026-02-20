@@ -1,0 +1,105 @@
+---
+layout: page
+title: Portfolio - Arm Remote
+---
+
+{% 
+    include heading2-section.html 
+    h2="Arm Remote" 
+    h3="Hexapod Walking Robot Controller" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include image-element.html
+    full_width=false
+    small_width=true
+    image="/assets/images/projects/armRemote/graphics/sideArm.png"
+    alt="Arm Remote Project Image"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        The arm remote was specifically intended and designed to be used in conjunction with the hexapod robot project, Podex. The mechanism was a fully operational transmitter fitted with a battery, Raspberry Pi Mini, the interface control panel, and a 9 axis accelerometer. The main construction of the arm remote is two compression sleeves that were cut and sewed for the electronic modules. All electronic modules are connected with hidden wire in between the two sandwiched arm sleeves. Using the Arm Remote inputs such as buttons, joysticks, and hand motions, the hexapod robot would be instructed to perform its tasks.
+    </p>
+</div>
+
+{%  include section3-block.html 
+    buttons="Design||Circuitry||Firmware||Software"
+    images="/assets/images/projects/armRemote/graphics/armRemoteDesign.png||/assets/images/projects/armRemote/graphics/armRemoteCircuitry.png||/assets/images/projects/armRemote/graphics/armRemoteFirmware.png||/assets/images/projects/armRemote/graphics/armRemoteSoftware.png"
+    texts1_icon="fa-solid fa-shirt||fa-solid fa-bolt||fa-solid fa-display||fa-brands fa-python"
+    texts1_title="Sleeve Structure||Integrated Wires||Analog Joystick||Python Socketing"
+    texts1_description="Compression sleeve for wearable technology use||Hidden wires for comfort and aesthetics||Joystick with analog signals converted to PWM with IC||Python library for device network connections"
+    texts1_x="38%||65%||45%||45%"
+    texts1_y="14%||18%||15%||14%"
+    texts2_icon="fa-solid fa-hand-holding||||fa-solid fa-wave-square||fa-solid fa-globe"
+    texts2_title="Ergonomic Design||||Accelerometer||Dynamic Control"
+    texts2_description="Designed around the human body for comfort and useability||||A 9-axis accelerometer used as the control gyro||Multi-functionality buttons with varying applications"
+    texts2_x="70%||||75%||75%"
+    texts2_y="23%||||25%||23%"
+    texts3_icon="fa-solid fa-microchip||fa-brands fa-usb||fa-solid fa-computer||fa-solid fa-person-walking"
+    texts3_title="Covered Electronic Modules||Breadboard||Raspberry Pi Motherboard||Client Transmitter"
+    texts3_description="Covered electronic modules for a finished design||Breadboard used for input board structure and components||Central control unit for all operations||Client software to communicate with host robot wifi"
+    texts3_x="66%||40%||61%||60%"
+    texts3_y="84%||78%||88%||88%"
+%}
+
+{% 
+    include heading2-section.html 
+    h2="Features" 
+    h3="Project Functionalities" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Design" 
+        subtitle="Wearable Tech"
+    %}
+    <p>
+        This Arm Remote was heavily inspired by the vision of futuristic technology being worn on the individual and user. Similar to a sci-fi movie with a wrist band as a computer screen and controller, this Arm Remote would perform similar functions. On the upper arm of the sleeve resided the lipo 7.4V battery and computer module. On the forearm resided the control interface, and on the hand, the accelerometer.
+    </p>
+</div>
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        id="sample-video"
+        src="/assets/videos/projects/armRemote/03Gyro.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Accelerometer" 
+            subtitle="Hand Motion Input"
+        %}
+        <p>
+            One of the most unique features about the arm is the accelerometer integrated into the hand of the arm sleeve. The accelerometer was used for the gyro, recording rotation of the hand in all directions. This data would then be sent to the robot to update either the robot's lateral position, or angle of the robot's main body frame itself.
+        </p>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/armRemote/electrical/componentTest2.jpg"
+        alt="Component Test"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="R&D" 
+            subtitle="Analog Signals"
+        %}
+        <p>
+            Before this project I had only worked with digital PWM signals. A joystick that was integrated into the interface on the other hand used analog signals. Raspberry Pi boards cannot read analog signals, meaning my build required the use of a specific IC to convert the analog signals into PWM. To understand how to use this IC, I conducted tests with breadboards.
+        </p>
+    </div>
+</div>

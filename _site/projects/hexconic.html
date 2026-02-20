@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Hexconic</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/card-section.css">
+  <script src="https://kit.fontawesome.com/a5645eeb0c.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/assets/images/headshot.png">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="heading1-section" aria-label="Parker Knopf">
+    <h1>Parker Knopf</h1>
+    <h3>Mechanical Engineer</h3>
+</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <div class="bar" style="--w: 2.6rem; --m: 0 auto;"></div>
+      <div class="bar"></div>
+      <div class="bar" style="--w: 2.6rem; --m: auto 0;"></div>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="/home.html" class="nav-button ">Home</a></li>
+        <li><a href="/experience.html" class="nav-button ">Experience</a></li>
+        <li class="nav-dropdown">
+          <a href="/projects.html" class="nav-button ">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="/projects/podex.html">Podex</a></li>
+            <li><a href="/projects/sector.html">Sector</a></li>
+            <li><a href="/projects/armRemote.html">Arm Remote</a></li>
+            <li><a href="/projects/3DLightCube.html">3D Light Cube</a></li>
+            <li><a href="/projects/gearHex.html">Gear Hex</a></li>
+            <li><a href="/projects/hexconic.html">Hexconic</a></li>
+            <li><a href="/projects/3DPrintedParts.html">3D Printed Parts</a></li>
+            <li><a href="/projects/3DLamp.html">3D Lamp</a></li>
+            <li><a href="/projects/rolyPolyToy.html">Roly-Poly Toy</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="/organizations.html" class="nav-button ">Organizations</a>
+          <ul class="dropdown-menu">
+            <li><a href="/organizations/skillsUSA.html">SkillsUSA</a></li>
+            <li><a href="/organizations/tritonRobotics.html">Triton Robotics</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="/teamProjects.html" class="nav-button ">Team Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="/teamProjects/hapticArm.html">Haptic Arm</a></li>
+            <li><a href="/teamProjects/oceanWell.html">OceanWell</a></li>
+            <li><a href="/teamProjects/seeker.html">Seeker</a></li>
+            <li><a href="/teamProjects/physicsBoat.html">Physics Boat</a></li>
+            <li><a href="/teamProjects/barnShed.html">Barn Shed</a></li>
+            <li><a href="/teamProjects/highSchoolFloats.html">School Floats</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+</header>
+
+  <main class="container">
+    <div class="heading2-section">
+  <div class="container">
+    <div class="heading">
+      <h2>Hexconic</h2>
+      <h3>Manufactured Assembly</h3>
+    </div>
+    <i class="fa-solid fa-hexagon-nodes icon"></i>
+  </div>
+</div>
+
+
+<div class="video-section">
+    <video class="video-element fullwidth" 
+        id="sample-video"
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        
+        >
+        <source src="/assets/videos/projects/hexconic/hexconicDemo.mp4" type="video/mp4">
+        
+        <p>Your browser does not support the video tag.</p>
+        
+    </video>
+</div>
+
+<div class="section2-block">
+    <div class="heading3">
+    <div class="heading3-section" aria-label="About">
+        <h1>About</h1>
+        <h3>General Info</h3>
+    </div>
+</div>
+    <p>
+        The purpose of this project was to mature my skills on a CNC machine and with CAM development. My high school had HAAS machines that I was determined to make use of. The product is a ring of 8 identical interlocking CNC fabricated components, sitting in a hexagon shape and unfolding into a circle.
+    </p>
+</div>
+
+<div class="section2-block">
+    <div class="heading3">
+    <div class="heading3-section" aria-label="Fixture Plate">
+        <h1>Fixture Plate</h1>
+        <h3>Machine Setup</h3>
+    </div>
+</div>
+    <p>
+        The machine shop I was working in was only a year new and was still developing methods of manufacturing. To fabricate this project it was essential to have a fixture plate in the machine. Using the fixture plate a G54 working offset could be set in the bore on the top left and any stock material could be fixed to the plate with tapped holes. I had learned this type of fixture from a family friend who is in the manufacturing field, and brought it to the high school lab as a new method of manufacturing.
+    </p>
+</div>
+
+<div class="section2-block">
+    <div class="heading3">
+    <div class="heading3-section" aria-label="Fabrication">
+        <h1>Fabrication</h1>
+        <h3>6 Operations</h3>
+    </div>
+</div>
+    <p>
+        The operations to fabricate this component were all independently thought of, developed, and programmed by myself. The operations included features such as facing, pockets, dynamic toolpaths, and contour tool paths. To completely fabricate this component, many operations were required. Between each operation new bolts were used and old ones removed to allow for the machine to mill the stock into the desired component. With the set G54 working offset the part could easily be set into position for the machine with the fixture plate having the drilled and tapped bores.
+    </p>
+</div>
+
+<div class="heading2-section">
+  <div class="container">
+    <div class="heading">
+      <h2>Fabrication</h2>
+      <h3>CNC Milling</h3>
+    </div>
+    <i class="fa-solid fa-hexagon-nodes icon"></i>
+  </div>
+</div>
+
+
+<div class="section2-block">
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op1.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op2a.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op2b.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="section2-block">
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op3.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op4.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op5.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="section2-block">
+    <div class="image-container  ">
+  
+  <img src="/assets/images/projects/hexconic/fab/op6.jpg" alt="Fabrication Operation" class="image-container-element">
+  
+  <div class="image-container-overlay">
+    <div class="image-container-content dark-theme-text">
+      
+      
+      
+    </div>
+  </div>
+</div>
+
+</div>
+  </main>
+
+  <section class="footer">
+  <a href="index.html" class="heading1-section" aria-label="Parker Knopf">
+    <h1>Parker Knopf</h1>
+    <h3>Mechanical Engineer</h3>
+</a>
+  <div class="contact-container">
+    <div class="contact-item">
+      <a href="mailto:parker.knopf@gmail.com" aria-label="Email">parker.knopf@gmail.com</a>
+      <i class="fa-solid fa-envelope icon"></i>
+    </div>
+    <div class="contact-item">
+      <a href="tel:+19513171218" aria-label="Phone">(951) 317-1218</a>
+      <i class="fa-solid fa-square-phone icon"></i>
+    </div>
+    <div class="contact-item">
+      <a href="https://www.linkedin.com/in/parker-knopf/" aria-label="LinkedIn">LinkedIn</a>
+      <i class="fa-brands fa-linkedin icon"></i>
+    </div>
+    <div class="contact-item">
+      <a href="https://maps.app.goo.gl/zzvZdGLjfjEoYTey5" aria-label="Location">San Diego</a>
+      <i class="fa-solid fa-location-dot icon"></i>
+    </div>
+  </div>
+</section>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

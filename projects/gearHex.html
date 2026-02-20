@@ -1,0 +1,79 @@
+---
+layout: page
+title: Portfolio - Gear Hex
+---
+
+{% 
+    include heading2-section.html 
+    h2="Gear Hex" 
+    h3="400-1 Gear Reduction" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include video-element.html
+    full_width=true
+    id="sample-video"
+    src="/assets/videos/projects/gearHex/gearHexDemo.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        This fully 3D printed assembly converts 400 rotations of motion into 1 singular rotation through an unconventional method. Using two harmonic drives offset by one tooth, creates this drastic gear ratio.
+    </p>
+</div>
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Design" 
+        subtitle="Harmonic Drive"
+    %}
+    <p>
+        This project was entirely inspired and reversed engineered from a similar project found on the web. The mechanism uses two harmonic drives each with a gear ratio of 20:1 to create a 400:1 gear reduction. All components of this design including the flexible material were fabricated with additive manufacturing methods. The design of the assembly was carefully engineered to yield a simplistic and intact product.
+    </p>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/gearHex/gearHexDrawing.png"
+        alt="GUI Interface"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Research" 
+            subtitle="Gear Design"
+        %}
+        <p>
+            Developing this mechanism came with research on spur gears and harmonic drives. Devoting numerous hours to the study of gear design allowed gear teeth to be incorporated into my mechanism.
+        </p>
+    </div>
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="Photos" 
+    h3="Components, Assembly, Design" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/gearHex/gearHex.png"
+        alt="GUI Interface"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/projects/gearHex/gearHexExploded.png"
+        alt="GUI Interface"
+    %}
+</div>

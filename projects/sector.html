@@ -1,0 +1,183 @@
+---
+layout: page
+title: Portfolio - Sector
+---
+
+{% 
+    include heading2-section.html 
+    h2="Sector" 
+    h3="6DOF Robotic Arm" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include video-element.html
+    full_width=true
+    id="sample-video"
+    src="/assets/videos/projects/sector/01RubixCubeDemo.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        This project was entirely designed and fabricated from scratch as an opportunity to further my expertise in the broad field of engineering. This 6DOF robotic arm uses 6 servos to actuate 6 independent degrees of freedom. Programmed with inverse kinematics, the robotic arm almost acts as its own CNC machine with an unfortunately large tolerance. The robotic arm is controlled with a personally designed executable file programmed with python kivy. The completion of this project alongside my emerging mechanical engineering courses lead me to look at the project critically, illustrating how much I have learned through the project and as a whole through my education.
+    </p>
+</div>
+
+{%  include section3-block.html 
+    buttons="Design||Circuitry||Firmware||Software"
+    images="/assets/images/projects/sector/graphics/sectorDesign.png||/assets/images/projects/sector/graphics/sectorCircuitry.png||/assets/images/projects/sector/graphics/sectorFirmware.png||/assets/images/projects/sector/graphics/sectorSoftware.png"
+    texts1_icon="fa-solid fa-paintbrush||fa-solid fa-bolt||fa-solid fa-display||fa-solid fa-calculator"
+    texts1_title="Aesthetics||Electrical Box||Graphics GUI||Inverse Kinematics"
+    texts1_description="Detail in design with extensive and complex CAD features||Open and vented electrical box with all required circuitry||Fully Developed custom GUI using python kivy||Operational Inverse Kinematics for CNC Control"
+    texts1_x="55%||40%||60%||40%"
+    texts1_y="7%||6%||6%||8%"
+    texts2_icon="fa-solid fa-gear||fa-brands fa-usb||fa-solid fa-gamepad||fa-solid fa-file-code"
+    texts2_title="Mechanical Advantage||Wire Management||Joystick Library||Recorded Paths"
+    texts2_description="3:2 Gear ratios to provide additional torque||Purposeful wire connections and paths with protective mesh||Utilized open source joystick library for GUI||User developed paths through the provided interface"
+    texts2_x="76%||78%||79%||70%"
+    texts2_y="50%||52%||52%||8%"
+    texts3_icon="fa-solid fa-dumbbell||fa-solid fa-computer||fa-solid fa-wifi||fa-solid fa-file-lines"
+    texts3_title="Mechanical Support||Raspberry Pi Motherboard||Wifi Socketing||Coordinate Dependent"
+    texts3_description="Springs to relieve stress from servos at maximum angles||Central control unit for all operations||Standalone wifi for GUI connection and control||Coordinate based programing for precision"
+    texts3_x="63%||55%||59%||76%"
+    texts3_y="95%||95%||95%||52%"
+%}
+
+{% 
+    include heading2-section.html 
+    h2="Features" 
+    h3="Project Functionalities" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Inverse Kinematics" 
+        subtitle="Trigonometry"
+    %}
+    <p>
+        I challenged myself to develop a machine with the ability to position the claw of the arm into a specific x, y, z coordinate location. To do this required inverse kinematics. Taking the requested coordinate, the program would perform trigonometric calculations to find the required angles of all 6 servos (a daunting task for an engineer that had not taken robot motion planning yet).
+    </p>
+</div>
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="GUI" 
+        subtitle="Kivy Library"
+    %}
+    <p>
+        During the prototyping stage of the robotic arm, I created a simple text interface which was useful, however not the end goal. Soon enough I researched the Kivy library and watched tutorials to develop my own executable application. This graphical interface communicated to the robot over a python socket library and standalone wifi-network hosted by the robot. Included in the interface were digital joysticks, an open-source library. The interface could also receive information from the robot if requested.
+    </p>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/sector/design/forearmCutout.png"
+        alt="Forearm Cutout Design"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Design" 
+            subtitle="Integration"
+        %}
+        <p>
+            The design of the robotic arm was complex in the forearm section of the robot. Not only did cables need to run though the center, it also tuned on that axis. Designing a structurally sound assembly while allowing for mounting holes and wire harness proved difficult however not impossible.
+        </p>
+    </div>
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="Operations" 
+    h3="Highlights and Functionalities" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/sector/03ClawDemo.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="The Claw" 
+            subtitle="Claw Functionality"
+        %}
+        <p>
+            The claw is a standard 4 bar linkage with two dynamic grippers. With the rest of the arm, the claw can reach many places at different attack angles.
+        </p>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/sector/05MaintainX-Coordinate.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Inverse Kinematics" 
+            subtitle="Maintaining X-Coordinate Position"
+        %}
+        <p>
+            The video demonstrates how the robotic arm can maintain a coordinate position while moving right. The input for this movement is simply shifting the joystick right, which is then computed into the necessary angles to achieve this operation.
+        </p>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/sector/06ClawOrientation.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Claw Orientation" 
+            subtitle="Maintaining Claw Orientation"
+        %}
+        <p>
+            This also uses inverse kinematics to maintain a horizontal or vertical position of the claw. The interface has accessible buttons to allow the user to specify what orientation the claw should be in.
+        </p>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        id="sample-video"
+        src="/assets/videos/projects/sector/01RubixCubeDemo.mp4"
+        type="video/mp4"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Paths" 
+            subtitle="User Set Paths"
+        %}
+        <p>
+            During operation of the machine, the user can orientate the robot to whatever required position and record the location. Doing this for a series of points forms a path that the robot will loop on command, similar to industry standard machines.
+        </p>
+    </div>
+</div>

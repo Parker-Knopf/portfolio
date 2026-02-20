@@ -1,0 +1,145 @@
+---
+layout: page
+title: Portfolio - Sector
+---
+
+{% 
+    include heading2-section.html 
+    h2="3D Light Cube" 
+    h3="LED Light Display" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include image-element.html
+    full_width=false
+    small_width=true
+    image="/assets/images/projects/3DLightCube/graphics/3DLightCubeCoverPhoto.jpg"
+    alt="GUI Interface"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        With 216 LED lights, this project at the time was the most electrically complex undertaking I have ever involved myself in. The Cube has a series of programs controlling the lights to perform visually aesthetic shows. The primary purpose of this project was to mature my skills in circuit design. A secondary purpose was to further develop my skills in computer programming. This project proved to be an enormous success! A self-designed , outsourced printed PCB, and self-developed robust and concise software made this project a success. This project extensively developed my technical skills and expertise in the field of electrical engineering.
+    </p>
+</div>
+
+{%  include section3-block.html 
+    buttons="Electrical||Circuitry||Hardware||Software"
+    images="/assets/images/projects/3DLightCube/graphics/3DLightCubeElectrical.png||/assets/images/projects/3DLightCube/graphics/3DLightCubeCircuitry.png||/assets/images/projects/3DLightCube/graphics/3DLightCubeHardware.png||/assets/images/projects/3DLightCube/graphics/3DLightCubeSoftware.png"
+    texts1_icon="fa-solid fa-grip-lines||fa-solid fa-square-plus||fa-solid fa-computer||fa-solid fa-lightbulb"
+    texts1_title="Wire||Circuit Board||Integrated Circuits||Flicker FPS"
+    texts1_description="Self twisted plastically strained hardened||2 Layer custom PCB with through hole mounts||6 SN74HC595N Integrated Circuits in series||Running at 60+ FPS to trick the eye an LED is on"
+    texts1_x="38%||75%||27%||45%"
+    texts1_y="10%||70%||81%||8%"
+    texts2_icon="fa-solid fa-lightbulb||fa-solid fa-draw-polygon||fa-solid fa-microchip||fa-solid fa-play"
+    texts2_title="LED Lights||Schematics||Arduino Nano||Multi-Press Buttons"
+    texts2_description="A total of 216 blue LEDs||Personally designed using Diptrace Schematics||Integrated control computer for all operations||3 button interface with button combinations for input"
+    texts2_x="65%||65%||75%||75%"
+    texts2_y="8%||85%||10%||10%"
+    texts3_icon="fa-solid fa-layer-group||fa-solid fa-square-minus||fa-solid fa-wave-square||fa-solid fa-hard-drive"
+    texts3_title="Grid Layout||PCB Design||Transistors||Object Oriented Programming"
+    texts3_description="Organized in columns and layers for circuity grid||Unique and custom design||Allowing 216 LED's to be controlled with only 4 I/O pins||Simplified and concise code to fit on limited Arduino storage"
+    texts3_x="68%||30%||72%||68%"
+    texts3_y="82%||83%||72%||82%"
+%}
+
+{% 
+    include heading2-section.html 
+    h2="Features" 
+    h3="Project Functionalities" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Circuit" 
+        subtitle="Schematics"
+    %}
+    <p>
+        The schematics of this project is not something I originally thought of. I had to closely examine and reverse engineer other similar projects on the web. Using IC's in series, and transistors, many hundreds of lights can be controlled. Each LED can to a certain extent be individually controlled with only 4 pins on the Arduino Nano motherboard and through a series of SN74HC595N IC's. By turning on a negative terminal layer with a transistor on the cube of LED lights, the IC's could run current through intended columns forming an “intersection” of current, turning the specific LED on.
+    </p>
+</div>
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="Programming" 
+        subtitle="Object Oriented"
+    %}
+    <p>
+        Due to the inability to control every individual LED, a sophisticated object oriented program was necessary. To form a “frame”, a single image on the cube, the program displays each layer of the cube one-by-one, doing so at an FPS around 60+. In this way it fools the eyes to think every light is on when in reality every layer is rapidly flickering. Every bulb has its own x,y,z coordinate and unique ID number. This software, unlike the circuitry, was entirely and painstakingly developed by myself. 
+    </p>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/projects/3DLightCube/schematics.png"
+        alt="Electrical Layout"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Custom PCB" 
+            subtitle="Diptrace"
+        %}
+        <p>
+            The main body of this construction itself is a custom designed PCB. I began this project with no prior knowledge of PCB design. I self-taught myself Diptrace in both their schematic and layout programs. Using prior knowledge of electrical engineering I roughly, but successfully assembled a working PCB layout. Completing the design and on the first prototype, it worked as expected.
+        </p>
+    </div>
+</div>
+
+{% 
+    include heading2-section.html 
+    h2="Operations" 
+    h3="Highlights and Functionality" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/3DLightCube/01Cube.mp4"
+        type="video/mp4"
+    %}
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/3DLightCube/03Rain.mp4"
+        type="video/mp4"
+    %}
+</div>
+
+<div class="section2-block">
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/3DLightCube/05Sparkle.mp4"
+        type="video/mp4"
+    %}
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/3DLightCube/11BouncingCube.mp4"
+        type="video/mp4"
+    %}
+    {%
+        include video-element.html
+        full_width=true
+        id="sample-video"
+        src="/assets/videos/projects/3DLightCube/12Wave.mp4"
+        type="video/mp4"
+    %}
+</div>

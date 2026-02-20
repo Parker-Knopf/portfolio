@@ -305,6 +305,12 @@ main.container {
   border-radius: 0;
 }
 
+.image-container.smallwidth {
+  width: 80%;
+  margin: var(--space-md);
+  box-sizing: border-box;
+}
+
 .image-container-element {
   width: 100%;
   height: 100%;
