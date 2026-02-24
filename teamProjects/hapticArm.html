@@ -1,0 +1,62 @@
+---
+layout: page
+title: Portfolio - Haptic Arm
+---
+
+{% 
+    include heading2-section.html 
+    h2="Haptic Arm" 
+    h3="MAE MS Teleoperation Haptic Device" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include video-element.html
+    full_width=true
+    id="sample-video"
+    src="/assets/videos/teamProjects/hapticArm/demo.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <div class="section1-block">
+        <p>
+            A novel haptic armband designed to mimic obstacle collisions of a 2D RR manipulator during task space teleoperation. A user study involving 12 subjects was conducted. A team project during my MS degree at UCSD.
+        </p>
+        <div class="item-card-buttons">
+            <a href="https://github.com/Parker-Knopf/mae207/tree/main" class="button primary">GitHub</a>
+            <a href="/assets/files/teamProjects/hapticArm/MAE207TechnicalPaper.pdf" class="button secondary">Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/teamProjects/hapticArm/system.png"
+        alt="Fabrication Operation"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/teamProjects/hapticArm/actuator.jpg"
+        alt="Fabrication Operation"
+    %}
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/teamProjects/hapticArm/drawing.png"
+        alt="Fabrication Operation"
+    %}
+    {%
+        include image-element.html
+        image="/assets/images/teamProjects/hapticArm/hapticArmCoverPhoto.png"
+        alt="Fabrication Operation"
+    %}
+</div>

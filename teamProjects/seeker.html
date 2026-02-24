@@ -1,0 +1,66 @@
+---
+layout: page
+title: Portfolio - Seeker
+---
+
+{% 
+    include heading2-section.html 
+    h2="Seeker | Autonomous Robot" 
+    h3="MAE UCSD Course Project" 
+    icon="fa-solid fa-hexagon-nodes"
+%}
+
+{%
+    include video-element.html
+    full_width=true
+    id="sample-video"
+    src="/assets/videos/teamProjects/seeker/demo.mp4"
+    type="video/mp4"
+%}
+
+<div class="section2-block">
+    {% 
+        include heading3-section.html 
+        title="About" 
+        subtitle="General Info"
+    %}
+    <p>
+        This team project conducted through a UCSD course developed our skills in programing, embedded systems, design, and teamwork. Our robocar, the Seeker, is designed to search for, locate, navigate to, and collect red ping pong balls (an easy light-weight object to demonstrate functionality).
+    </p>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/teamProjects/seeker/cad.png"
+        alt="CAD"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Design" 
+            subtitle="CAD Development"
+        %}
+        <p>
+            The inspiration for this design was to create a simple non-dynamic mechanism that could reliantly retrieve ping-pong balls. Using my prior knowledge, skill, and experience, I designed with the intent to 3D fabricate these components.
+        </p>
+    </div>
+</div>
+
+<div class="section2-block">
+    {%
+        include image-element.html
+        image="/assets/images/teamProjects/seeker/schematic.png"
+        alt="Schematic"
+    %}
+    <div class="section1-block">
+        {% 
+            include heading3-section.html 
+            title="Schematics" 
+            subtitle="Electronics"
+        %}
+        <p>
+            Shown above is a crude schematic of the robot's electronic harness. The course guided our development of this schematic outline, however I personally composed the schematic.
+        </p>
+    </div>
+</div>
